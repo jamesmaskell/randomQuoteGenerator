@@ -1,3 +1,52 @@
+$back: #7c8d95;
+$contrast: #425465;
+
 body {
-    background-color: orangered;
+    background-color: $back;
+}
+
+.container {
+    height:100vh;
+
+    .row {
+        height:100%;
+
+        #quote-box {
+            padding: 50px;
+            color: white;
+
+            #text {
+                font-family: 'Libre Baskerville', serif;
+                font-size: 3em;
+                text-align: justify;
+
+                &:before {
+                    content: "\"";
+                }
+            
+                &:after {
+                    content: "\"";
+                }
+            }
+
+            #author {
+                font-family: 'Roboto', sans-serif;
+                text-align: right;
+
+                &:before {
+                    content: "- ";
+                }
+            }
+        }
+    }
+}
+
+.btn-primary {
+    background-color: $contrast;
+    border-color: $contrast;
+
+    &:hover {
+        background-color: $contrast;
+        border-color: $contrast;
+    }
 }

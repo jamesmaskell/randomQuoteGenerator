@@ -1,3 +1,49 @@
 body {
-  background-color: orangered;
+  background-color: #7c8d95;
+}
+
+.container {
+  height: 100vh;
+}
+
+.container .row {
+  height: 100%;
+}
+
+.container .row #quote-box {
+  padding: 50px;
+  color: white;
+}
+
+.container .row #quote-box #text {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3em;
+  text-align: justify;
+}
+
+.container .row #quote-box #text:before {
+  content: "\"";
+}
+
+.container .row #quote-box #text:after {
+  content: "\"";
+}
+
+.container .row #quote-box #author {
+  font-family: 'Roboto', sans-serif;
+  text-align: right;
+}
+
+.container .row #quote-box #author:before {
+  content: "- ";
+}
+
+.btn-primary {
+  background-color: #425465;
+  border-color: #425465;
+}
+
+.btn-primary:hover {
+  background-color: #425465;
+  border-color: #425465;
 }
