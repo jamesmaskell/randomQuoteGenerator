@@ -12,13 +12,16 @@ body {
 
 .container .row #quote-box {
   padding: 50px;
-  color: white;
+  color: whitesmoke;
+  height: 738px;
 }
 
 .container .row #quote-box #text {
   font-family: 'Libre Baskerville', serif;
   font-size: 3em;
   text-align: justify;
+  line-height: 1.8em;
+  margin-top: 50px;
 }
 
 .container .row #quote-box #text:before {
@@ -32,18 +35,23 @@ body {
 .container .row #quote-box #author {
   font-family: 'Roboto', sans-serif;
   text-align: right;
+  font-size: 1.5em;
 }
 
 .container .row #quote-box #author:before {
   content: "- ";
 }
 
-.btn-primary {
+.container .row #quote-box .btn-primary {
   background-color: #425465;
   border-color: #425465;
 }
 
-.btn-primary:hover {
+.container .row #quote-box .btn-primary:active, .container .row #quote-box .btn-primary:focus, .container .row #quote-box .btn-primary:hover {
   background-color: #425465;
   border-color: #425465;
+}
+
+.container .row #quote-box .btn-primary i {
+  font-size: 1.2rem;
 }

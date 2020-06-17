@@ -13,12 +13,16 @@ body {
 
         #quote-box {
             padding: 50px;
-            color: white;
+            color: whitesmoke;
+            height: 738px;
 
             #text {
                 font-family: 'Libre Baskerville', serif;
                 font-size: 3em;
                 text-align: justify;
+                line-height: 1.8em;
+                margin-top: 50px;
+                
 
                 &:before {
                     content: "\"";
@@ -32,21 +36,27 @@ body {
             #author {
                 font-family: 'Roboto', sans-serif;
                 text-align: right;
+                font-size: 1.5em;
 
                 &:before {
                     content: "- ";
+                }
+            }
+
+            .btn-primary {
+                background-color: $contrast;
+                border-color: $contrast;
+            
+                &:active, &:focus, &:hover {
+                    background-color: $contrast;
+                    border-color: $contrast;
+                }
+            
+                i {
+                    font-size: 1.2rem;
                 }
             }
         }
     }
 }
 
-.btn-primary {
-    background-color: $contrast;
-    border-color: $contrast;
-
-    &:hover {
-        background-color: $contrast;
-        border-color: $contrast;
-    }
-}
