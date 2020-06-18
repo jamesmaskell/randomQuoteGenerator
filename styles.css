@@ -2,21 +2,21 @@ body {
   background-color: #7c8d95;
 }
 
-.container {
+.main {
   height: 100vh;
 }
 
-.container .row {
+.main .row {
   height: 100%;
 }
 
-.container .row #quote-box {
+#quote-box {
   padding: 50px;
   color: whitesmoke;
   height: 738px;
 }
 
-.container .row #quote-box #text {
+#text {
   font-family: 'Libre Baskerville', serif;
   font-size: 3em;
   text-align: justify;
@@ -24,34 +24,30 @@ body {
   margin-top: 50px;
 }
 
-.container .row #quote-box #text:before {
+#text:before, #text:after {
   content: "\"";
 }
 
-.container .row #quote-box #text:after {
-  content: "\"";
-}
-
-.container .row #quote-box #author {
+#author {
   font-family: 'Roboto', sans-serif;
   text-align: right;
   font-size: 1.5em;
 }
 
-.container .row #quote-box #author:before {
+#author:before {
   content: "- ";
 }
 
-.container .row #quote-box .btn-primary {
+.btn-primary {
   background-color: #425465;
   border-color: #425465;
 }
 
-.container .row #quote-box .btn-primary:active, .container .row #quote-box .btn-primary:focus, .container .row #quote-box .btn-primary:hover {
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
   background-color: #425465;
   border-color: #425465;
 }
 
-.container .row #quote-box .btn-primary i {
+.btn-primary i {
   font-size: 1.2rem;
 }

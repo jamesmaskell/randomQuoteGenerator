@@ -9,8 +9,8 @@ $(document).ready(function() {
             success: function(data) {
                 successCallBack(data)
             },
-            error: function () {
-                catchError(jqXHR, textStatus, errorThrown ) 
+            error: function (jqXHR, textStatus, errorThrown) {
+                catchError(jqXHR, textStatus, errorThrown) 
             }
         })
     }
