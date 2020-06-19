@@ -1,0 +1,12 @@
+<div class="main container">
+    <div class="row align-items-center">
+        <div class="col">
+            <div id="quote-box">
+                <button id="new-quote" class="btn btn-primary" (click)="onClick()">New Quote</button>
+                <a class="btn btn-primary" id="tweet-quote" href="{{getTwitterLink()}}"><i class="fa fa-twitter"></i></a>
+                <div id="text" class="aaa">{{quote.quote}}</div>
+                <div id="author" class="aaa">{{quote.author}}</div>
+            </div>
+        </div> 
+    </div>
+</div> 
