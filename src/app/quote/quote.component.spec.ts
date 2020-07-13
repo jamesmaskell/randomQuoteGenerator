@@ -65,9 +65,13 @@ describe('QuoteComponent Tests', () => {
   });
 
   test('onClick calls getRandomQuote', () => {
-    const spy = jest.spyOn(fixture, 'getRandomQuote').mockImplementation();
+    const spy = jest
+      .spyOn(fixture, 'getRandomQuote')
+      .mockImplementation()
+      .mockReturnValue(response.quotes[0]);
     fixture.onClick();
     expect(spy).toHaveBeenCalled();
+    expect(fixture.quote).toEqual(response.quotes[0]);
   });
 
   test('getTwitterLink returns encoded URL', () => {

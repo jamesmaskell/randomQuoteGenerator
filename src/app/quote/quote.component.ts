@@ -32,7 +32,7 @@ export class QuoteComponent implements OnInit {
   }
 
   onClick() {
-    this.getRandomQuote();
+    this.quote = this.getRandomQuote();
   }
 
   getTwitterLink() {
